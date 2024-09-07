@@ -49,6 +49,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 # string you started the search on.
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 # This key handler shows the entire or filtered history using Out-GridView. The
 # typed text is used as the substring pattern for filtering. A selected command
